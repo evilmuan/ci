@@ -15,7 +15,7 @@ cool ci demo
 ### test being tested
 
 1. fork and add a new branch
-2. add a new file on said branch
+2. add a new `.md` file on said branch
 3. file should contain **only** emoji codes and/or `<br>` for tests to pass
 4. send me a pull request
 

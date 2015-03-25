@@ -10,13 +10,13 @@ var failed      = function() {
 var mdfiles = fs.list('.').filter(function(filename) { return filename.match(/\.md$/) && filename !== 'README.md' })
 
 mdfiles.forEach(function(filename) {
-  var content = fs.read(filename).replace(/\s/g, '')
+  var content = fs.read(filename).replace(/\s|<br>/gi, '')
 
   console.log("\nTEST: " + filename + "\n")
   var emoji = content.match(/\:\w+\:/g)
 
   //
-  console.log("- Contains emoji codes only")
+  console.log("- Contains emoji codes & line breaks only")
   if( emoji.join('').length == content.length ) {
     passed()
   } else {

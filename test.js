@@ -1,5 +1,7 @@
 var fs          = require('fs')
 var data        = require('./emoji.json')
+var whitelist   = require('./whitelist_files.json')
+var allfiles    = fs.list('.')
 var buildFailed = false
 var passed      = function() { console.log("\x1B[92mPASSED\x1B[0m\n") }
 var failed      = function() {
@@ -7,12 +9,24 @@ var failed      = function() {
   buildFailed = true
 }
 
-var mdfiles = fs.list('.').filter(function(filename) { return filename.match(/\.md$/) && filename !== 'README.md' })
+console.log("\nTEST: all files")
+
+console.log("- Every file other than the white listed ones should be .md files")
+var invalidfiles = allfiles.filter(function(filename) { return !filename.match(/\.md$/) && whitelist.indexOf(filename) < 0 })
+
+if( invalidfiles.length > 0 ) {
+  console.log("  Invalid - " + invalidfiles.join(", "))
+  failed()
+} else {
+  passed()
+}
+
+var mdfiles = allfiles.filter(function(filename) { return filename.match(/\.md$/) && filename !== 'README.md' })
 
 mdfiles.forEach(function(filename) {
   var content = fs.read(filename).replace(/\s|<br>/gi, '')
 
-  console.log("\nTEST: " + filename + "\n")
+  console.log("TEST: " + filename + "\n")
   var emoji = content.match(/\:\w+\:/g)
 
   //

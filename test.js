@@ -9,7 +9,7 @@ var failed      = function() {
   buildFailed = true
 }
 
-console.log("\nTEST: all files")
+console.log("\n[ global ]\n")
 
 console.log("- Every file other than the white listed ones should be .md files")
 var invalidfiles = allfiles.filter(function(filename) { return !filename.match(/\.md$/) && whitelist.indexOf(filename) < 0 })
@@ -21,17 +21,19 @@ if( invalidfiles.length > 0 ) {
   passed()
 }
 
+console.log("--------------------------------------------------------------------\n")
+
 var mdfiles = allfiles.filter(function(filename) { return filename.match(/\.md$/) && filename !== 'README.md' })
 
 mdfiles.forEach(function(filename) {
   var content = fs.read(filename).replace(/\s|<br>/gi, '')
 
-  console.log("TEST: " + filename + "\n")
+  console.log("[ " + filename + " ]\n")
   var emoji = content.match(/\:\w+\:/g)
 
   //
   console.log("- Contains emoji codes & line breaks only")
-  if( emoji.join('').length == content.length ) {
+  if( emoji && emoji.join('').length === content.length ) {
     passed()
   } else {
     failed()
@@ -40,7 +42,7 @@ mdfiles.forEach(function(filename) {
   //
   console.log("- Emoji codes are valid")
   var invalidemoji = emoji.filter(function(code){ return data.indexOf(code) < 0 })
-  if( invalidemoji.length == 0 ) {
+  if( emoji && invalidemoji.length === 0 ) {
     passed()
   } else {
     console.log("  Invalid - " + invalidemoji.join(", "))

@@ -1,0 +1,12 @@
+:gem::gem::gem::gem::gem::gem::gem::gem::gem::gem::gem::gem:<br>
+:gem::gem::gem::leaves::leaves::gem::black_nib::gem::gem::gem::gem::gem:<br>
+:gem::gem::gem::gem::leaves::leaves::black_nib::gem::gem::gem::gem::gem:<br>
+:gem::gem::apple::apple::leaves::leaves::black_nib::apple::apple::apple::gem::gem:<br>
+:gem::apple::apple::apple::apple::apple::apple::apple::apple::apple::apple::gem:<br>
+:gem::apple::apple::apple::apple::apple::apple::apple::apple::apple::apple::gem:<br>
+:gem::apple::apple::apple::apple::apple::apple::apple::apple::apple::apple::gem:<br>
+:gem::apple::apple::apple::apple::apple::apple::apple::apple::apple::apple::gem:<br>
+:gem::apple::apple::apple::apple::apple::apple::apple::apple::apple::apple::gem:<br>
+:gem::gem::apple::apple::apple::apple::apple::apple::apple::apple::gem::gem:<br>
+:gem::gem::gem::apple::apple::apple::gem::apple::apple::gem::gem::gem:<br>
+:gem::gem::gem::gem::gem::gem::gem::gem::gem::gem::gem::gem:<br>

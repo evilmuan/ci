@@ -2,7 +2,7 @@
 
 cool ci demo
 
-## steps
+## steps to setup your own
 
 1. write some tests, like [`2c8e4ab`](https://github.com/evilmuan/ci/commit/2c8e4ab4eb678d8ff37d2f2185abd546f4474ac8)
 2. add `.travis.yml`, like [`5e662a6`](https://github.com/evilmuan/ci/commit/5e662a661f3a0dc5d28ff3008d7a554f8c86e744)

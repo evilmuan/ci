@@ -1,5 +1,5 @@
 var fs          = require('fs')
-var data        = JSON.parse(fs.read('emoji.json'))
+var data        = require('./emoji.json')
 var buildFailed = false
 var passed      = function() { console.log("\x1B[92mPASSED\x1B[0m\n") }
 var failed      = function() {

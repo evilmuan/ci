@@ -3,6 +3,8 @@ script: phantomjs test.js
 sudo: false
 notifications:
   email: false
+git:
+  depth: 1
 branches:
   only:
   - gh-pages

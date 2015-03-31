@@ -23,7 +23,7 @@ if( invalidfiles.length > 0 ) {
 
 console.log("--------------------------------------------------------------------\n")
 
-var mdfiles = allfiles.filter(function(filename) { return filename.match(/\.md$/) && filename !== 'README.md' })
+var mdfiles = allfiles.filter(function(filename) { return filename.match(/\.md$/) && filename !== 'README.md' && filename !== 'README-zhtw.md' })
 
 mdfiles.forEach(function(filename) {
   var content = fs.read(filename).replace(/\s|<br>/gi, '')

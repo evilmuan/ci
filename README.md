@@ -2,6 +2,8 @@
 
 cool ci demo
 
+[![Build Status](https://travis-ci.org/evilmuan/ci.svg?branch=master)](https://travis-ci.org/evilmuan/ci)
+
 ## try things here
 
 ### test being tested

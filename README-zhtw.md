@@ -2,6 +2,8 @@
 
 CI 示範程式
 
+[![Build Status](https://travis-ci.org/evilmuan/ci.svg?branch=master)](https://travis-ci.org/evilmuan/ci)
+
 ## 試用看看 CI
 
 ### 試看看怎麼 CI 怎麼運作

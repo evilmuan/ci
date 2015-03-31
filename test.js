@@ -3,9 +3,9 @@ var data        = require('./emoji.json')
 var whitelist   = require('./whitelist_files.json')
 var allfiles    = fs.list('.')
 var buildFailed = false
-var passed      = function() { console.log("\x1B[92mPASSED\x1B[0m\n") }
+var passed      = function() { console.log("\x1B[92m✓ PASSED\x1B[0m\n") }
 var failed      = function() {
-  console.log("\x1B[91mFAILED\x1B[0m\n")
+  console.log("\x1B[91m✘ FAILED\x1B[0m\n")
   buildFailed = true
 }
 

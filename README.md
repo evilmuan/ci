@@ -1,6 +1,6 @@
 # ci
 
-cool ci demo
+Awesome ci demo trigger build what ci
 
 [![Build Status](https://travis-ci.org/evilmuan/ci.svg?branch=master)](https://travis-ci.org/evilmuan/ci)
 

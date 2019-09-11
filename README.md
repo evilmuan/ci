@@ -1,6 +1,6 @@
 # ci
 
-cool ci demo
+cool ci demo ok
 
 ## steps
 
